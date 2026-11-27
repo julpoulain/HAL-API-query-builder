@@ -176,15 +176,8 @@ const FIELDS = [
   { name: "funding_t",       label: "Financement (texte libre)", type: "_t"     },
   { name: "halId_s",       label: "Hal ID", type: "_s"     },
   { name: "inPress_bool",       label: "À paraître", type: "_bool"     },
-  { name: "openAccess_bool",       label: "Accès Ouvert", type: "_bool"     },  
   { name: "isbn_s",       label: "ISBN", type: "_s"     },
   { name: "issue_s",       label: "Volume", type: "_s", outputOnly: true },
-  { name: "linkExtId_s",       label: "Type de lien externe", type: "_s", options: [
-    { value: "openaccess", label: "Open Access" },
-    { value: "pubmedcentral", label: "PubMed" },
-    { value: "istex", label: "Istex" },
-    { value: "arxiv", label: "Arxiv" },
-  ] },
   { name: "journalIssn_s",       label: "ISSN", type: "_s"     },
   { name: "title_t", label: "Titre", type: "_t" },
   { name: "uri_s", label: "URL de la notice", type: "_s", outputOnly: true },
@@ -217,6 +210,14 @@ const FIELDS = [
   { name: "version_i", label: "Nombre de versions", type: "_i" },
   { name: "contributorFullName_s", label: "Nom du déposant", type: "_s" },
   { name: "contributorId_i", label: "Déposant (UserID)", type: "_i" },
+  { name: "linkExtId_s",       label: "Type de lien externe", type: "_s", options: [
+    { value: "openaccess", label: "Open Access" },
+    { value: "pubmedcentral", label: "PubMed" },
+    { value: "istex", label: "Istex" },
+    { value: "arxiv", label: "Arxiv" },
+  ] },
+  { name: "openAccess_bool",       label: "Accès Ouvert", type: "_bool"     },  
+  
 ];
   
 
